@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FoRus</string>
+
+    <string-array name="tipoPrenda">
+        <item>Camisas</item>
+        <item>Pantalones</item>
+        <item>Zapatos</item>
+        <item>Accesorios</item>
+        <item>Chaquetas</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="rbHombre"> Masculino </string>
+    <string name="rbMujer"> Femenino </string>
+
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".RegistrarRopa">
+
+    <TextView
+        android:id="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:text="Tipo"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/tipoPrenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:entries="@array/tipoPrenda" />
+
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipo"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:text="Genero"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:id="@+id/opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/genero">
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbHombre" />
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbMujer" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/Carac"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/opciones"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Caracteristicas"
+        android:inputType="textMultiLine" />
+
+    <ImageView
+        android:id="@+id/prenda"
+        android:layout_width="300dp"
+        android:layout_height="255dp"
+        android:layout_below="@id/Carac"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/prenda" />
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenda"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/purple_500"
+
+        android:text="Camara"
+        android:textColor="#FFFFFFFF" />
+
+    <Button
+        android:id="@+id/btnGaleria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenda"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="tomarGaleria"
+        android:text="Galeria"
+        android:textColor="#FFFFFFFF" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenda"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Guardar"
+        android:textColor="#FFFFFFFF" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Tittle" />
+
+
+</RelativeLayout>

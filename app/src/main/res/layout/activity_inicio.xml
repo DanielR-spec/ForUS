@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Tittle" />
+
+    <ImageView
+        android:id="@+id/ImgUsuario"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tb"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="100dp"
+        android:text="User_name" />
+
+    <ImageView
+        android:id="@+id/ImgTotalDonaciones"
+        android:layout_width="186dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/tb"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/camisa" />
+
+    <Button
+        android:id="@+id/btnTotalDonaciones"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/ImgTotalDonaciones"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TOTAL DONACIONES"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+    <ImageView
+        android:id="@+id/ImgCalidad"
+        android:layout_width="186dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/tb"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/camisa" />
+
+    <Button
+        android:id="@+id/btnCalidad"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/ImgCalidad"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="10dp"
+        android:text="CALIDAD"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+    <ImageView
+        android:id="@+id/ImgCatalogo"
+        android:layout_width="186dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/ImgTotalDonaciones"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/camisa"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+    <Button
+        android:id="@+id/btnCatalogo"
+        android:layout_width="187dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/ImgCatalogo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="CATALOGO"
+        android:textColor="#FFFFFFFF"
+        android:onClick="catalogo"/>
+
+    <ImageView
+        android:id="@+id/ImgDonar"
+        android:layout_width="186dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/ImgCalidad"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/camisa"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+    <Button
+        android:id="@+id/btnDonar"
+        android:layout_width="187dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/ImgDonar"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="10dp"
+        android:text="Donar"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+    <ImageView
+        android:id="@+id/ImgDonaciones"
+        android:layout_width="186dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/ImgCatalogo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/camisa" />
+
+    <Button
+        android:id="@+id/btnDonaciones"
+        android:layout_width="187dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/ImgRecomendaciones"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Donaciones"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+    <ImageView
+        android:id="@+id/ImgRecomendaciones"
+        android:layout_width="186dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/ImgDonar"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/camisa" />
+
+    <Button
+        android:id="@+id/btnRecomendacion"
+        android:layout_width="182dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/ImgRecomendaciones"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="10dp"
+        android:text="RECOMENDACIONES"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+
+</RelativeLayout>

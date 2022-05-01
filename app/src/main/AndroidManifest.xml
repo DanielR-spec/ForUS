@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.forus">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoRus"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".prueba"
+            android:exported="false" />
+        <activity
+            android:name=".ClasificarRopa"
+            android:exported="false" />
+        <activity
+            android:name=".Privacy"
+            android:exported="false"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".MiCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio"
+            android:exported="false" />
+        <activity
+            android:name=".GestionarPrenda"
+            android:exported="true" />
+        <activity
+            android:name=".Categoria"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarRopa"
+            android:exported="false" />
+        <activity
+            android:name=".Registrarse"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Imagen"
+                android:layout_marginTop="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/donaciones" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_below= "@id/Imagen"
+                android:hint="Correo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Correo"
+                    android:layout_gravity="center"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below= "@id/Correo"
+                app:endIconMode="password_toggle"
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Password"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:hint="Contraseña"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Login"
+                android:onClick="inicio"
+                android:textColor= "#FFFFFFFF"
+                android:layout_below = "@+id/Password"
+                />
+
+            <TextView
+                android:id="@+id/Registrarse"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_below="@id/btnLogin"
+                android:paddingLeft="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:onClick="registrarse"
+                android:textColor="#6600CC"/>
+
+            <TextView
+                android:id="@+id/Forgot"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:layout_below="@id/Registrarse"
+                android:paddingLeft="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:onClick="recordar"
+                android:textColor="#6600CC"/>
+
+            <TextView
+                android:id="@+id/Privacy"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Privacy"
+                android:layout_below="@id/Forgot"
+                android:paddingLeft="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:onClick="privacy"
+                android:textColor="#6600CC"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

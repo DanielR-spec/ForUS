@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miItem1"
+        android:title="Home"
+        android:visible="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_home"/>
+
+    <item
+        android:id="@+id/miItem2"
+        android:title="Notificaciones"
+        android:visible="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_notification"/>
+
+    <item
+        android:id="@+id/miItem3"
+        android:title="Mi cuenta"
+        android:visible="true"
+        app:showAsAction="ifRoom"
+         />
+
+    <item
+        android:id="@+id/miItem4"
+        android:title="Salir"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/miItem5"
+        android:title="Ayuda"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+</menu>

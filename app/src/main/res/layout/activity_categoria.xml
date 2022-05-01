@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Categoria">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Tittle" />
+
+
+        <TextView
+            android:id="@+id/TituloC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Categorias"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+
+        <ImageButton
+            android:id="@+id/camisas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TituloC"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:onClick="busqueda"
+            app:srcCompat="@mipmap/camiseta" />
+
+
+        <ImageButton
+            android:id="@+id/pantalones"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TituloC"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="45dp"
+            android:onClick="busqueda"
+            app:srcCompat="@mipmap/jean" />
+
+        <ImageButton
+            android:id="@+id/zapatos"
+            android:layout_width="123dp"
+            android:layout_height="104dp"
+            android:layout_below="@id/camisas"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:onClick="busqueda"
+            app:srcCompat="@mipmap/calzado" />
+
+        <ImageButton
+            android:id="@+id/accesorios"
+            android:layout_width="123dp"
+            android:layout_height="104dp"
+            android:layout_below="@id/pantalones"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="43dp"
+            android:onClick="busqueda"
+            app:srcCompat="@mipmap/accesorios2" />
+
+        <ImageButton
+            android:id="@+id/chaquetas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zapatos"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@mipmap/chaquetas2"
+            android:onClick="busqueda"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/chaquetas"
+            android:layout_marginTop="45dp"
+            android:background="#CCFFFF" />
+
+        <Button
+            android:id="@+id/btnOutfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chaquetas"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:onClick="crear"
+            android:text="Create Outfit" />
+
+        <TextView
+            android:id="@+id/agrega"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/chaquetas"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="42dp"
+            android:onClick="agregar"
+            android:text="+"
+            android:textColor="#6600CC"
+            android:textSize="50dp" />
+
+
+
+
+</RelativeLayout>

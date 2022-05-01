@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".GestionarPrenda">
+
+
+    <Button
+        android:id="@+id/btnDonar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DONAR"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"/>
+
+    <Button
+        android:id="@+id/btnCambiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAMBIAR"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnDonar"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:backgroundTint="@color/purple_500"
+        android:textColor= "#FFFFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnCambiar"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="70dp"
+        android:numStars="5"
+        android:rating="0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Tittle" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        app:srcCompat="@drawable/camisa" />
+
+</RelativeLayout>
