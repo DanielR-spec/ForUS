@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ClasificarRopa">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Tittle" />
+
+    <EditText
+        android:id="@+id/textoCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Categoria"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/categoria1"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/textoCategoria"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/camiseta" />
+
+    <ImageView
+        android:id="@+id/categoria2"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/textoCategoria"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/zapatos" />
+
+    <ImageView
+        android:id="@+id/categoria3"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textoCategoria"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/jean" />
+
+    <ImageView
+        android:id="@+id/categoria4"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/textoCategoria"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/chaquetas"/>
+
+    <ImageView
+        android:id="@+id/categoria5"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/textoCategoria"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/accesorios" />
+
+    <EditText
+        android:id="@+id/textoRopa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tu ropa"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="190dp"/>
+
+
+
+
+
+</RelativeLayout>
