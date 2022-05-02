@@ -28,6 +28,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         mail = findViewById(R.id.Correo);
         password = findViewById(R.id.Password);
         login = findViewById(R.id.btnLogin);
