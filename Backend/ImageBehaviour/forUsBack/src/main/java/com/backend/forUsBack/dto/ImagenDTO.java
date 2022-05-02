@@ -1,27 +1,21 @@
-package com.backend.forUsBack.model;
+package com.backend.forUsBack.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.awt.*;
 import java.io.File;
-import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
-public class Imagen {
+public class ImagenDTO {
 
-    private int id;
     private int dias;
-
     private File img;
-
     private String fecha;
     private String genero;
     private String talla;
-
 }
