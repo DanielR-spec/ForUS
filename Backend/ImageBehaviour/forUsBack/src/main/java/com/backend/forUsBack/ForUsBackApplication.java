@@ -14,8 +14,9 @@ public class ForUsBackApplication {
 			System.out.println("================ SERVER Up :) ================");
 
 		} catch (Exception e) {
-			throw new RuntimeException(e+"================ SERVER DOWN :( ================");
+			throw new RuntimeException("================ SERVER DOWN :( ================");
 		}
+
 	}
 
 }
