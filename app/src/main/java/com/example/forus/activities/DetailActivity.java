@@ -1,8 +1,12 @@
 package com.example.forus.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -10,6 +14,8 @@ import com.example.forus.R;
 import com.example.forus.interfaces.CRUDInterface;
 import com.example.forus.model.Imagen;
 import com.example.forus.constants.Constants;
+
+import java.io.Serializable;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -22,8 +28,11 @@ public class DetailActivity extends AppCompatActivity {
     TextView idText;
     TextView nameText;
     TextView priceText;
+    Button editButton;
 
     CRUDInterface crudInterface;
+
+    Imagen imagen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +42,13 @@ public class DetailActivity extends AppCompatActivity {
         nameText = findViewById(R.id.nameText);
         priceText = findViewById(R.id.priceText);
         int id = getIntent().getExtras().getInt("id");
+        editButton = findViewById(R.id.editButton);
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callEdit();
+            }
+        });
         getOne(id);
     }
 
@@ -52,10 +68,10 @@ public class DetailActivity extends AppCompatActivity {
                     Log.e("Response err: ", response.message());
                     return;
                 }
-                Imagen imagen = response.body();
+                imagen = response.body();
                 idText.setText(String.valueOf(imagen.getId()));
-                nameText.setText(imagen.getFecha());
-                priceText.setText(String.valueOf(imagen.getFecha()));
+                nameText.setText(imagen.getGenero());
+                priceText.setText(String.valueOf(imagen.getDias()));
             }
 
             @Override
@@ -65,5 +81,11 @@ public class DetailActivity extends AppCompatActivity {
                 Log.e("Throw err: ", t.getMessage());
             }
         });
+    }
+
+    private void callEdit() {
+        Intent intent = new Intent(getApplicationContext(), EditActivity.class);
+        intent.putExtra("imagen", imagen);
+        startActivity(intent);
     }
 }

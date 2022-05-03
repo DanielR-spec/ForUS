@@ -72,7 +72,7 @@ public class prueba extends AppCompatActivity {
                 catalogo = response.body();
                 ImageListAdapter imageListAdapter = new ImageListAdapter(catalogo, getApplicationContext());
                 listView.setAdapter(imageListAdapter);
-                catalogo.forEach(p -> Log.i("Prods: ", p.toString()));
+                catalogo.forEach(p -> Log.i("Imgs: ", p.toString()));
             }
 
             @Override

@@ -3,8 +3,9 @@ package com.example.forus.model;
 import androidx.annotation.NonNull;
 
 import java.io.File;
+import java.io.Serializable;
 
-public class Imagen {
+public class Imagen implements Serializable {
 
     private int id;
     private int dias;
