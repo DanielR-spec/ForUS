@@ -7,12 +7,20 @@
     android:padding="10dp"
     tools:context=".prueba">
 
-    <TextView
-        android:id="@+id/texto1"
+    <ListView
+        android:id="@+id/ls1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello word"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="207dp" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/purple_700"
+        android:foregroundGravity="bottom|right"
+        android:src="@drawable/ic_baseline_add_circle_outline_24" />
 
 </RelativeLayout>

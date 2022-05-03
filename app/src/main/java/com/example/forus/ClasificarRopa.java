@@ -6,28 +6,9 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.SyncStateContract;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-
-import com.example.forus.interfaces.CRUDInterface;
-import com.example.forus.model.Image;
-
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-import com.example.forus.interfaces.CRUDInterface;
-import com.example.forus.model.Image;
 
 public class ClasificarRopa extends AppCompatActivity {
 

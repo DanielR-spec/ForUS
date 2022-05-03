@@ -7,15 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ForUsBackApplication {
 
 	public static void main(String[] args) {
-		System.out.println("================ STARTING SERVER... ================");
 
-		try {
 			SpringApplication.run(ForUsBackApplication.class, args);
-			System.out.println("================ SERVER Up :) ================");
-
-		} catch (Exception e) {
-			throw new RuntimeException("================ SERVER DOWN :( ================");
-		}
 
 	}
 

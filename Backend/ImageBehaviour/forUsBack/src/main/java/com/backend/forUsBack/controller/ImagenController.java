@@ -20,9 +20,10 @@ import java.util.List;
 @RequestMapping("/imagen")
 public class ImagenController {
 
-    File file = new File("/src/main/resources/static/pants.png");
+    //File file = new File("/src/main/resources/static/pants.png");
 
-    private List<Imagen> closeth = new ArrayList<>(Arrays.asList(new Imagen(1,0,file,"22/02/2020","M","S")));
+    private List<Imagen> closeth = new ArrayList<>(Arrays.asList(new Imagen(1,2,null,"2/2/2021","M","S"),
+            new Imagen(3,5,null,"3/5/2021","M","S")));
 
     @GetMapping
     public ResponseEntity<List<Imagen>> getAll() {

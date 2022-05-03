@@ -25,11 +25,13 @@
         android:theme="@style/Theme.FoRus"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".prueba"
+            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".ClasificarRopa"
             android:exported="false" />
+        <activity android:name=".activities.CreateActivity"/>
+        <activity android:name=".activities.DetailActivity" />
         <activity
             android:name=".Privacy"
             android:exported="false"
@@ -53,7 +55,7 @@
             android:name=".Registrarse"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".prueba"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

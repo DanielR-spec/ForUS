@@ -1,26 +1,17 @@
-package com.example.forus.model;
-
-import androidx.annotation.NonNull;
+package com.example.forus.dto;
 
 import java.io.File;
 
-public class Image {
 
-    private int id;
+public class ImageDto {
+
     private int dias;
-
     private File img;
-
     private String fecha;
     private String genero;
     private String talla;
 
-    public Image() {
-
-    }
-
-    public Image(int id, int dias, File img, String fecha, String genero, String talla) {
-        this.id = id;
+    public ImageDto(int dias, File img, String fecha, String genero, String talla) {
         this.dias = dias;
         this.img = img;
         this.fecha = fecha;
@@ -28,13 +19,6 @@ public class Image {
         this.talla = talla;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getDias() {
         return dias;
@@ -74,15 +58,5 @@ public class Image {
 
     public void setTalla(String talla) {
         this.talla = talla;
-    }
-
-    @Override
-    public String toString() {
-        return "Id: " + getId() +
-                "Dias: " + getDias() +
-                "Ruta img: " + getImg() +
-                "Fecha: " + getFecha() +
-                "Genero: " + getGenero() +
-                "Talla" + getTalla();
     }
 }
