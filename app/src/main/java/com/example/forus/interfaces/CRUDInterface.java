@@ -6,6 +6,7 @@ import com.example.forus.model.Imagen;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
@@ -24,4 +25,7 @@ public interface CRUDInterface {
     Call<Imagen> create(@Body ImageDto dto);
     @PUT("imagen/{id}")
     Call<Imagen> edit(@Path("id") int id, @Body ImageDto dto);
+
+    @DELETE("imagen/{id}")
+    Call<Imagen>delete(@Path(("id")) int id);
 }
